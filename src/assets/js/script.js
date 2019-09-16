@@ -31,7 +31,7 @@ async function run() {
     //const model = await tf.loadLayersModel('file://D:/vscode_workspace/tfjs-client/tfjs-client/src/assets/model/custom-model.json');
    // const model = await tf.loadLayersModel('http://localhost:1234/assets/model/custom-model.json');
     //recognizer = speechCommands.create('BROWSER_FFT');
-    recognizer = speechCommands.create('BROWSER_FFT', null, 'http://localhost:1234/assets/model/custom-model.json', 'http://localhost:1234/assets/model/metadata.json');
+    recognizer = speechCommands.create('BROWSER_FFT', null, 'http://localhost:8080/assets/model/custom-model.json', 'http://localhost:8080/assets/model/metadata.json');
     //recognizer = speechCommands.create('BROWSER_FFT');
     await recognizer.ensureModelLoaded();
     console.debug(recognizer.wordLabels());
